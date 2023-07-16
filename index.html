@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intrest_Rate</title>
+    <link rel="stylesheet" href="./intrestrate.css">
+</head>
+<body>
+    <h1>Simple intrest calculator</h1>
+    <div class="main">
+        <div id="principle">
+            <label for=""> Principle</label>
+            <input type="text"  id="prince" placeholder="Enter your principle Amount"><br>
+            <label for="">Intrest rate</label>
+            <input type="number"    id="inter" placeholder="Enter your intrest rate"><br>
+            <label for="">Duration of Paying</label>
+            <input type="number"  id="month" placeholder="Enter no of years">
+            <center>
+                <button onclick="calculate()">Calculate</button>
+            </center>
+            
+        </div>
+        
+<div class="resultmain">
+        <h3 class="result"></h3><br>
+        <h3 class="result1"></h3><br>
+        <h3 class="result2"></h3>
+</div>
+
+    </div>
+    </form>
+    <script>
+    let prince1=Number(document.getElementById('prince'));
+    let intrest=Number(document.getElementById('inter'));
+    let month1=Number(document.getElementById('month'));
+   
+
+     function calculate()
+       {
+        if(prince.value&&inter.value&&month.value!='')
+        {
+        let tot=((prince.value*inter.value*month.value)/100);
+        let totamt=(+prince.value + +tot);
+       
+      let result=document.querySelector(".result").innerHTML=("Total Intrest to  be paid: RS"+tot);
+      let result1=document.querySelector(".result1").innerHTML=("Principle amount: RS"+prince.value);
+      let result2=document.querySelector(".result2").innerHTML=("Total amount: RS"+totamt);
+        }
+        else if((prince.value==='')||(inter.value==='')||(month.value===''))
+        {
+            let result=document.querySelector(".result").innerHTML=("Kindly fill above columns to find total intrest");   
+        }
+       }
+    </script>
+</body>
+</html>

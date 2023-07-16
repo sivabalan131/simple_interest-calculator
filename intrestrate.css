@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:sans-serif;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+    justify-content: center;
+    align-items: center;
+    background-color: lightskyblue;
+    height: 100vh;
+}
+.main{
+    height: fit-content;
+    width: fit-content;
+    background-color: rgba(0, 0, 0, 0.7);
+border-radius: 10px;
+    padding: 20px;
+    color: white;
+}
+#principle button {
+    padding: 10px;
+    border-radius: 7px;
+    cursor: pointer;
+}
+ #principle label{
+width:200px;
+display: inline-block;
+padding: 15px;
+margin: 10px;
+}
+#principle input{
+    padding: 10px;
+    border-radius: 7px;
+}
+.resultmain{
+padding: 10px;
+color: white;
+font-weight: bold;
+}
